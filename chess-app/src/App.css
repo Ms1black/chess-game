@@ -1,37 +1,29 @@
 * {
-
   margin: 0;
   padding: 0;
-
 }
 
 .app{
-
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .board{
-
   width: calc(120px * 8);
   height: calc(120px * 8);
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .cell {
-
   width: 120px;
   height: 120px;
   display: flex;
   justify-content:  center;
   align-items: center;
-
 }
 
 .cell img {
@@ -41,12 +33,30 @@
 }
 
 .black {
+  
+  background-blend-mode: overlay;
   background-color: rgb(220, 178, 255);
 }
 
 .white {
-  background-color: rgb(238, 231, 231);
+  background-blend-mode: hard-light;
+  background-color: rgb(255, 248, 248);
+  
 }
 
+.black, .white {
+  background-image: url("assets/2148667797.jpg"); /* Replace with your texture URL */
+  background-size: cover;
+}
 
+.selected{
+  background-color: rgb(255, 172, 172);
+  background-blend-mode: color-burn;
+}
 
+.available {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(159, 57, 255);
+}
