@@ -1,0 +1,52 @@
+* {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+.app{
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.board{
+
+  width: calc(120px * 8);
+  height: calc(120px * 8);
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.cell {
+
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+
+}
+
+.cell img {
+  width: 105px;
+  height: 105px;
+  position: relative;
+}
+
+.black {
+  background-color: rgb(220, 178, 255);
+}
+
+.white {
+  background-color: rgb(238, 231, 231);
+}
+
+
+
